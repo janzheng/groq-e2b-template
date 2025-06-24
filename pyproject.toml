@@ -1,9 +1,13 @@
 [project]
 name = "groq-e2b"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "How to generate and run code with Groq and e2b"
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+    {name = "Jan Zheng"}
+]
+license = {text = "MIT"}
 dependencies = [
     "e2b-code-interpreter>=1.5.1",
     "groq>=0.28.0",
