@@ -1,0 +1,19 @@
+{
+  "name": "groq-e2b",
+  "version": "1.0.0",
+  "description": "Generate and run code with Groq and e2b",
+  "license": "MIT",
+  "author": "Jan Zheng",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "js-example": "node js-example.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@e2b/code-interpreter": "^1.5.1",
+    "groq-sdk": "^0.8.0",
+    "dotenv": "^16.3.1"
+  }
+}
