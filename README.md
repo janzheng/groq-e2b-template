@@ -41,7 +41,7 @@ E2B (Execute to Build) provides secure, isolated sandbox environments for runnin
 #### Python Setup
 1. **Clone the repository**
    ```bash
-   git clone [your-repo-url]
+   gh repo clone janzheng/groq-e2b-template
    cd groq-e2b
    ```
 
