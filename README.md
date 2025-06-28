@@ -42,7 +42,7 @@ E2B (Execute to Build) provides secure, isolated sandbox environments for runnin
 1. **Clone the repository**
    ```bash
    gh repo clone janzheng/groq-e2b-template
-   cd groq-e2b
+   cd groq-e2b-template
    ```
 
 2. **Install UV package manager**
