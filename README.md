@@ -50,13 +50,18 @@ E2B (Execute to Build) provides secure, isolated sandbox environments for runnin
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
-3. **Create a `.env` file** and add your API keys:
+3. **Navigate to the Python examples folder**
+   ```bash
+   cd py-examples
+   ```
+
+4. **Create a `.env` file** and add your API keys:
    ```env
    GROQ_API_KEY=your-groq-api-key-here
    E2B_API_KEY=your-e2b-api-key-here
    ```
 
-4. **Run the Python example**
+5. **Run the Python example**
    ```bash
    uv run python main.py
    ```
@@ -68,18 +73,23 @@ E2B (Execute to Build) provides secure, isolated sandbox environments for runnin
    cd groq-e2b
    ```
 
-2. **Install dependencies**
+2. **Navigate to the JavaScript examples folder**
+   ```bash
+   cd js-examples
+   ```
+
+3. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Create a `.env` file** and add your API keys:
+4. **Create a `.env` file** and add your API keys:
    ```env
    GROQ_API_KEY=your-groq-api-key-here
    E2B_API_KEY=your-e2b-api-key-here
    ```
 
-4. **Run the JavaScript examples**
+5. **Run the JavaScript examples**
    ```bash
    # Run the main Groq + E2B example (generates Python code with Groq, executes in E2B)
    npm start
@@ -189,7 +199,7 @@ The E2B Code Interpreter sandbox supports multiple programming languages:
 
 ### Customizing for Your Use Case
 
-**Modify the System Prompt** in `main.py` or `main.js`:
+**Modify the System Prompt** in `py-examples/main.py` or `js-examples/main.js`:
 ```python
 SYSTEM_PROMPT = """You are a Python expert. Generate code that:
 1. [Your specific requirements]
@@ -233,7 +243,7 @@ E2B sandboxes provide:
 
 This template is designed to be a foundation for building AI code interpreters. Key areas for customization:
 
-- **Model Selection:** Update Groq model configuration in `main.py` or `main.js`
+- **Model Selection:** Update Groq model configuration in `py-examples/main.py` or `js-examples/main.js`
 - **Prompt Engineering:** Customize system and user prompts for specific coding tasks
 - **Code Parsing:** Modify code extraction logic for different output formats
 - **Language Selection:** Choose between Python, JavaScript, TypeScript execution
