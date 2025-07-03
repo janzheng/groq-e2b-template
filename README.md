@@ -42,17 +42,17 @@ E2B (Execute to Build) provides secure, isolated sandbox environments for runnin
 1. **Clone the repository**
    ```bash
    gh repo clone janzheng/groq-e2b-template
-   cd groq-e2b-template
+   cd groq-e2b-template/py-examples
    ```
 
-2. **Install UV package manager**
+2. **Install uv package manager**
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
-3. **Navigate to the Python examples folder**
+3. **Install dependencies**
    ```bash
-   cd py-examples
+   uv sync  # Creates .venv and installs dependencies
    ```
 
 4. **Create a `.env` file** and add your API keys:
@@ -63,13 +63,13 @@ E2B (Execute to Build) provides secure, isolated sandbox environments for runnin
 
 5. **Run the Python example**
    ```bash
-   uv run python main.py
+   uv run main.py
    ```
 
 #### JavaScript/Node.js Setup
 1. **Clone the repository** (if not already done)
    ```bash
-   git clone [your-repo-url]
+   gh repo clone janzheng/groq-e2b-template
    cd groq-e2b
    ```
 
